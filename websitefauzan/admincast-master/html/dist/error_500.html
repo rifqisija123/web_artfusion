@@ -1,0 +1,2572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>SIAP | Sistem Aplikasi Percetakan</title>
+    <!-- GLOBAL MAINLY STYLES-->
+    <link href="./assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="./assets/vendors/themify-icons/css/themify-icons.css" rel="stylesheet" />
+    <!-- PLUGINS STYLES-->
+    <link href="./assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
+    <!-- THEME STYLES-->
+    <link href="assets/css/main.min.css" rel="stylesheet" />
+    <!-- PAGE LEVEL STYLES-->
+     <link rel="shortcut icon"  href="./assets/img/metatech.jpeg">
+</head>
+
+
+
+
+<body class="hold-transition sidebar-mini layout-fixed">
+
+
+
+
+		
+
+
+
+<div class="wrapper">
+
+
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+ <!-- Right navbar links -->
+  
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src='../images/logo (3).png'width='' height='' alt="Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Art Fusion</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="pull-left image">
+							<img src='../images/../images/9de211b9-ed4c-4215-bc33-0e398959cc7f.jpg'							<a class="img-circle" alt="User Image">
+                        </div>
+						<div class="info">
+							<a href="edit_pegawai.php?aksi=edit&id_user=9" class="d-block">7admin</a>
+
+						</div>
+      </div>
+
+     <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          
+          <li class="nav-item">
+            <a href="./" class="nav-link">
+            <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+              Dashboard
+              </p>
+            </a>
+          </li>
+
+
+         <li class="nav-header">DATABASE</li>
+		 
+		  <li class="nav-item active">
+            <a href="pemesanan.php" class="nav-link ">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Pemesanan
+              </p>
+            </a>
+          </li>
+		  
+		  
+		  
+		  <li class="nav-item  has-treeview">
+            <a href="#" class="nav-link">
+            
+            <i class="nav-icon fa fa-check-square"></i>
+              <p>
+              Cek Data
+                <i class="right fas fa-angle-left"></i>
+                <span class="badge badge-warning right">3</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="harga-jual.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Harga Produk</p>
+                </a>
+              </li>                          
+            </ul>
+			<ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="harga-bahan.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Harga Bahan</p>
+                </a>
+              </li>                          
+            </ul>
+			<ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="stok.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Stok Bahan</p>
+                </a>
+              </li>                          
+            </ul>
+          </li>
+             
+          <li class="nav-item">
+            <a href="pegawai.php" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Data Karyawan
+              </p>
+            </a>
+          </li>   
+
+		  
+          <li class="nav-header">LAPORAN</li>
+
+		  <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+            
+            <i class="nav-icon fa fas fa-copy"></i>
+              <p>
+              Transaksi
+                <i class="right fas fa-angle-left"></i>
+                <span class="badge badge-success right">4</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pemasukan.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pemasukan</p>
+                </a>
+              </li>                          
+            </ul>
+			<ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pengeluaran.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pengeluaran</p>
+                </a>
+              </li>                          
+            </ul>
+			<ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="income.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Income</p>
+                </a>
+              </li>                          
+            </ul>
+			<ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="invoice.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Invoice</p>
+                </a>
+              </li>                          
+            </ul>
+          </li>
+		  
+		  		  <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+            
+            <i class="nav-icon fas fa-book"></i>
+              <p>
+               Utang & Piutang
+                <i class="right fas fa-angle-left"></i>
+                <span class="badge badge-primary right">2</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="utang.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Laporan Utang</p>
+                </a>
+              </li>                          
+            </ul>
+			<ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="piutang.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Laporan Piutang</p>
+                </a>
+              </li>                          
+            </ul>
+
+<li class="nav-header">SETTING</li>		
+          <li class="nav-item">
+            <a href="setting.php?aksi=edit&id_user=1" class="nav-link">
+              <i class="nav-icon fa fa-cog"></i>
+              
+            
+              <p>
+              Setting
+              </p>
+            </a>
+          </li>   
+          <li class="nav-item">
+            <a href="../logout.php" class="nav-link">
+              <i class="nav-icon fas fa-sign-out-alt"></i>
+              
+            
+              <p>
+              Keluar
+              </p>
+            </a>
+          </li>  		  
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  
+     </div>
+   <!-- Content Wrapper. Contains page content -->
+  <script>
+  //fullscreen function
+			$(".fullscreen").click(function(){
+				x = $(this).find("a>i").attr("class") ;
+				if(x == "fas fa-expand-arrows-alt")
+				{
+					showFullscreen(document.documentElement);
+					$(this).find("a").html('<i class="fas fa-compress-arrows-alt" data-toggle="tooltip" title="Exit Fullscreen" data-placement="bottom"></i>');
+				}else{
+					exitFullscreen();
+					$(this).find("a").html('<i class="fas fa-expand-arrows-alt" data-toggle="tooltip" title="Fullscreen" data-placement="bottom"></i>');
+				}
+			});
+			//Fullscreen Function
+			function showFullscreen(element) {
+				if(element.showFullscreen) {
+					element.showFullscreen();
+				} else if(element.mozRequestFullScreen) {
+					element.mozRequestFullScreen();
+				} else if(element.webkitRequestFullscreen) {
+					element.webkitRequestFullscreen();
+				} else if(element.msRequestFullscreen) {
+					element.msRequestFullscreen();
+				}
+			}
+			//Exit Fullscreen Function
+			function exitFullscreen() {
+				if(document.exitFullscreen) {
+					document.exitFullscreen();
+				} else if(document.mozCancelFullScreen) {
+					document.mozCancelFullScreen();
+				} else if(document.webkitExitFullscreen) {
+					document.webkitExitFullscreen();
+				}
+			}
+  </script>
+<script src="../dist/js/adminlte.min.js"></script>
+<script src="../dist/js/demo.js"></script>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/jquery/jquery.js"></script>
+    <!-- /.content-header -->
+	<head>
+
+
+
+</head>
+<body class="hold-transition sidebar-mini">
+ <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Data Pemasukan</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Pemasukan</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+	
+
+	
+					
+ 
+ <div class="col-md-12">
+ 
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+
+		  
+		      <!-- Main content -->
+
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-success"><i class="fas fa-wallet"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Total Pemasukan</span>
+                <span class="info-box-number">Rp.13.851.220</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-info"><i class="fas fa-money-bill-alt text-d"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Pemasukan Bulan Ini</span>
+                <span class="info-box-number">Rp.20</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-warning"><i class="fas fa-dollar-sign text-white"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Pemasukan Minggu Ini</span>
+                <span class="info-box-number">Rp.20</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-primary"><i class="fas fa-hand-holding-usd"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Pemasukan Hari Ini</span>
+                <span class="info-box-number">Rp.0</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+		
+
+            <!-- Content Column -->
+
+			
+
+              <!-- Project Card Example -->
+              <div class="card">
+                <div class="card-header">
+                  <h6 class="m-0 font-weight-bold text-primary">Kategori Pemasukan</h6>
+
+
+
+				</div> 
+
+                <div class="card-body">
+				
+                  <h4 class="small font-weight-bold">1. Merchandise<span class="float-right">Rp. 650.000,00</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width:20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">2 Order</div>
+                  </div>
+				  <h4 class="small font-weight-bold">2. Digital Printing<span class="float-right">Rp. 2.510.000,00</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width:20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">2 Order</div>
+                  </div>
+				  <h4 class="small font-weight-bold">3. Sablon <span class="float-right">Rp. 5.580.000,00</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-info" role="progressbar" style="width:30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">3 Order</div>
+                  </div>
+				  <h4 class="small font-weight-bold">4. Undangan<span class="float-right">Rp. 10.000,00</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width:10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">1 Order</div>
+                  </div>
+				  <h4 class="small font-weight-bold">9. Lain-Lain<span class="float-right">Rp. 0,00</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width:0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">0 Order</div>
+                  </div>				  
+				</div> 
+
+			
+              </div>
+			
+			  
+			
+
+
+            <div class="card">
+              <div class="card-header">
+                <button type="button" class="btn btn-primary" style="margin:1px" data-toggle="modal" data-target="#myModalTambah"><i class="fa fa-plus"> Tambah Baru</i></button>
+				<button type="button" class="btn btn-info" style="margin:5px" data-toggle="modal" data-target="#myModalImport"><i class="fa fa-upload"> Import Data</i></button>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+				    <th>No</th>
+                    <th>Nama</th>
+                    <th>tanggal</th>
+					<th>jumlah</th>
+					<th>kategori</th>
+					<th>Keterangan</th>
+                    <th>Aksi</th>
+                  </tr>
+                  </thead>
+                  <tfoot>
+                  <tr>
+				    <th>No</th>
+                    <th>Nama</th>
+                    <th>tanggal</th>
+					<th>jumlah</th>
+					<th>kategori</th>
+					<th>Keterangan</th>
+                    <th>Aksi</th>
+                  </tr>
+                  </tfoot>
+				                    <tbody>
+				                      <tr>
+					<td>1</td>
+                      <td>nana</td>
+					  <td>06 Agustus 2023</td>
+					  <td>Rp.20</td>
+					  <td></td>					 
+					  <td>cetak cover                    </td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal18"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=18" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal18" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="18">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="nana">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2023-08-06">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="20">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+cetak cover                        </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                    <tr>
+					<td>2</td>
+                      <td>rita</td>
+					  <td>26 Juli 2022</td>
+					  <td>Rp.1.200</td>
+					  <td></td>					 
+					  <td>        </td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal17"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=17" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal17" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="17">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="rita">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2022-07-26">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="1200">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+            </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                    <tr>
+					<td>3</td>
+                      <td>bamba</td>
+					  <td>16 Juni 2022</td>
+					  <td>Rp.100.000</td>
+					  <td></td>					 
+					  <td>stiker    </td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal16"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=16" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal16" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="16">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="bamba">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2022-06-16">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="100000">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+stiker        </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                    <tr>
+					<td>4</td>
+                      <td>sdg</td>
+					  <td>22 Juli 2021</td>
+					  <td>Rp.500.000</td>
+					  <td>3</td>					 
+					  <td>sdgsdghs</td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal14"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=14" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal14" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="14">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="sdg">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2021-07-22">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="500000">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+sdgsdghs    </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                    <tr>
+					<td>5</td>
+                      <td>sdgsdg</td>
+					  <td>22 Juli 2021</td>
+					  <td>Rp.0</td>
+					  <td>3</td>					 
+					  <td>sdgsdh</td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal13"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=13" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal13" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="13">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="sdgsdg">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2021-07-22">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="0">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+sdgsdh    </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                    <tr>
+					<td>6</td>
+                      <td>asfgasg</td>
+					  <td>21 Juli 2021</td>
+					  <td>Rp.5.000.000</td>
+					  <td></td>					 
+					  <td>asgasga    </td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal12"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=12" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal12" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="12">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="asfgasg">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2021-07-21">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="5000000">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+asgasga        </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                    <tr>
+					<td>7</td>
+                      <td>tset222</td>
+					  <td>21 Juli 2021</td>
+					  <td>Rp.10.000</td>
+					  <td>2</td>					 
+					  <td>jhfrhgf</td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal11"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=11" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal11" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="11">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="tset222">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2021-07-21">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="10000">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+jhfrhgf    </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                    <tr>
+					<td>8</td>
+                      <td>shsdh</td>
+					  <td>08 Juni 2021</td>
+					  <td>Rp.2.500.000</td>
+					  <td>2</td>					 
+					  <td>sdgsdhsdh</td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal10"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=10" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal10" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="10">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="shsdh">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2021-06-08">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="2500000">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+sdgsdhsdh    </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                    <tr>
+					<td>9</td>
+                      <td>tset222</td>
+					  <td>20 Juli 2021</td>
+					  <td>Rp.10.000</td>
+					  <td>4</td>					 
+					  <td>sdgsdhgsdh</td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal8"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=8" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal8" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="8">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="tset222">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2021-07-20">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="10000">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+sdgsdhgsdh    </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                    <tr>
+					<td>10</td>
+                      <td>asgasg</td>
+					  <td>17 Juli 2021</td>
+					  <td>Rp.5.080.000</td>
+					  <td>3</td>					 
+					  <td>asgasg        </td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal6"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=6" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal6" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="6">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="asgasg">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2021-07-17">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="5080000">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+asgasg            </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                    <tr>
+					<td>11</td>
+                      <td>agsg</td>
+					  <td>19 Juli 2021</td>
+					  <td>Rp.500.000</td>
+					  <td>1</td>					 
+					  <td>adhahdadh</td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal5"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=5" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal5" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="5">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="agsg">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2021-07-19">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="500000">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+adhahdadh    </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                    <tr>
+					<td>12</td>
+                      <td>januari</td>
+					  <td>20 Juli 2021</td>
+					  <td>Rp.150.000</td>
+					  <td>1</td>					 
+					  <td>asfasg</td>					  
+				    <td>
+                    <!-- Button untuk modal -->
+					<a href="#" type="button" class=" fa fa-edit btn btn-xs btn-primary btn-md" data-toggle="modal" data-target="#myModal4"> Edit</a>
+                    <a href="component/delete/hapus-pemasukan.php?id_order=4" class="btn btn-danger btn-flat btn-xs btn-hapus"><i class="fa fa-trash"></i> Hapus</a>
+</td>
+
+</tr>
+<!-- Modal Edit -->
+<div class="modal fade" id="myModal4" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Ubah Pemasukan</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<form role="form" action="component/edit/edit_pemasukan.php" method="get">
+
+
+
+<input type="hidden" name="id_order" value="4">
+
+
+<div class="form-group">
+<label>Nama</label>
+<input type="text" name="nama" class="form-control" value="januari">      
+</div>
+
+<div class="form-group">
+<label>tanggal</label>
+<input type="date" name="tanggal" class="form-control" value="2021-07-20">      
+</div>
+
+<div class="form-group">
+<label>Jumlah</label>
+<input type="number" name="jumlah" class="form-control" value="150000">      
+</div>
+
+<div class="form-group " name="id_sumber">
+<label>Kategori</label>
+<select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+
+</div>
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea type="text" name="keterangan" class="form-control" rows="5">
+asfasg    </textarea>       
+</div>
+
+
+<div class="modal-footer">  
+<button type="submit" class="btn btn-success">Ubah</button>
+
+<button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+</div>
+  
+       
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+ <!-- Modal Tambah -->
+  <div id="myModalTambah" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tambah Pemasukan</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+		<form action="component/add/add_pemasukan.php" method="get">
+        <div class="modal-body">
+		Nama : 
+         <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+	    Tanggal : 
+         <input type="date" class="form-control" name="tanggal">
+		Jumlah : 
+        <input type="number" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <=57" name="jumlah" id="" placeholder="Masukkan Jumlah (hanya angka)">
+		<div class="form-group " name="id_sumber">
+        <label>Kategori</label>
+         <select class="form-control" name="id_sumber">
+		 <option value="" >Pilih Kategori</option>
+		 <option value="1" >1. Merchandise</option>
+		 <option value="2" >2. Digital Printing</option>
+		 <option value="3" >3. Sablon</option>
+		 <option value="4" >4. Undangan</option>
+		 <option value="9" >5. Lain-Lain</option>
+		 </select>
+        </div>
+		Keterangan : 
+         <textarea type="text" name="keterangan" class="form-control" rows="5"></textarea>  
+
+
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" class="btn btn-success" >Tambah</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+       <!-- Modal import -->
+  <div id="myModalImport" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- konten modal-->
+      <div class="modal-content">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Import Data Excel</h4>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- body modal -->
+
+        <div class="modal-body">
+<form method="post" enctype="multipart/form-data" >
+	Pilih File:
+			<input name="filemhsw" type="file" required="required">
+        </div>
+        <!-- footer modal -->
+        <div class="modal-footer">
+		<button type="submit" name="upload" class="btn btn-info" value="Import">Upload</button>
+		</form>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+          <!-- right col -->
+        </div>
+      
+    <!-- /.content -->
+  </div>
+
+
+<!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2021 <a href="#">OmahDigital.my.id</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Verion 1.0</b> 
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+</body>
+</html>
+<!-- jQuery -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<!-- Javascript untuk popup modal Delete-->
+<!-- Javascript untuk popup modal Delete-->
+
+<script src="../vendor/sweetalert2/sweetalert2.min.js"></script>
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": [ "colvis", "excel"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+<script>
+  
+            $('.btn-hapus').on('click',function(e){
+				e.preventDefault();
+                const href = $(this).attr('href');
+				
+                swal.fire({
+                        title: 'Apakah kamu yakin?',
+						text: 'Data Akan di Hapus Selamanya!',
+					    icon: 'warning',
+						showCancelButton: true,
+						confirmButtonColor: '#d33',
+						cancelButtonColor: 'class="btn btn-default"',
+                        confirmButtonText: 'Hapus',
+						cancelButtonText: 'Batal',
+				}).then((result) => {
+                        if (result.value){
+							document.location.href = href;
+						}
+				})
+			})
+    </script>
+
+
+<!-- Bootstrap 4 -->
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="../vendor/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../vendor/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../vendor/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../vendor/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../vendor/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../vendor/jszip/jszip.min.js"></script>
+<script src="../vendor/pdfmake/pdfmake.min.js"></script>
+<script src="../vendor/pdfmake/vfs_fonts.js"></script>
+<script src="../vendor/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../vendor/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../vendor/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+ 
+	<script type="text/javascript">
+		
+		var rupiah = document.getElementById('rupiah');
+		rupiah.addEventListener('keyup', function(e){
+			// tambahkan 'Rp.' pada saat form di ketik
+			// gunakan fungsi formatRupiah() untuk mengubah angka yang di ketik menjadi format angka
+			rupiah.value = formatRupiah(this.value, 'Rp. ');
+		});
+
+		/* Fungsi formatRupiah */
+		function formatRupiah(angka, prefix){
+			var number_string = angka.replace(/[^,\d]/g, '').toString(),
+			split   		= number_string.split(','),
+			sisa     		= split[0].length % 3,
+			rupiah     		= split[0].substr(0, sisa),
+			ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
+
+			// tambahkan titik jika yang di input sudah menjadi angka ribuan
+			if(ribuan){
+				separator = sisa ? '.' : '';
+				rupiah += separator + ribuan.join('.');
+			}
+
+			rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+			return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+		}
+	</script>
+</body>
+</html>
